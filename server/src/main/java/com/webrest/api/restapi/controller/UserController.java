@@ -9,15 +9,17 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/user")
+
 public class UserController {
     @Autowired
     private UserRepository userRepository;
     @GetMapping
+    @RequestMapping("/user/getUser")
     public List<UserModel> List() {
         return userRepository.findAll();
     }
     @PostMapping
+    @RequestMapping("/user/insertUser")
     @ResponseStatus(HttpStatus.CREATED)
     public UserModel addUser(@RequestBody UserModel userModel) {
         return userRepository.save(userModel);
