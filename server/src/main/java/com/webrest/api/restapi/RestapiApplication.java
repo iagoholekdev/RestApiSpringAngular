@@ -1,6 +1,5 @@
 package com.webrest.api.restapi;
 
-import com.webrest.api.restapi.model.UserModel;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
