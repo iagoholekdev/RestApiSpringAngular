@@ -6,6 +6,7 @@ import java.util.Objects;
 
 import lombok.Data;
 
+
 @Data
 @Entity
 public class UserModel {
@@ -15,6 +16,8 @@ public class UserModel {
     private Long id;
     @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
+    private int age;
 
     @Override
     public boolean equals(Object o) {
@@ -34,12 +37,17 @@ public class UserModel {
         return this;
     }
 
-    public Long getId() {
-        return id;
-    }
-
     public UserModel addName(String name) {
         this.name = name;
         return this;
+    }
+
+    public UserModel addAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public int getAge() {
+        return this.age;
     }
 }

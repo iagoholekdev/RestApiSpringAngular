@@ -7,12 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class RestapiApplication implements CommandLineRunner {
+
 	public static void main(String[] args) {
-		SpringApplication.run(RestapiApplication.class, args);
+	  SpringApplication.run(RestapiApplication.class, args);
 	}
 
 	public void run(String... args) throws Exception {
-	   new UserModel().addName("Teste");
+
 	}
 
 
