@@ -2,6 +2,7 @@ package com.webrest.api.restapi.model;
 
 import jakarta.persistence.*;
 
+import java.util.Collection;
 import java.util.Objects;
 
 import lombok.Data;
@@ -50,4 +51,5 @@ public class UserModel {
     public int getAge() {
         return this.age;
     }
+
 }
